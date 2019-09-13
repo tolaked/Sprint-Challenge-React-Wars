@@ -1,11 +1,17 @@
 import React from "react";
 import { CharacterList } from "../CharacterList/CharacterList";
-import "./DisplayCharacter.css";
+import styled from "styled-components";
+
+const Allcharacters = styled.section`
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+`;
 
 export const DisplayCharacters = props => {
   const { starwarsChars } = props;
   return (
-    <section className="all-characters">
+    <Allcharacters>
       {starwarsChars.map(character => {
         const {
           name,
@@ -31,6 +37,6 @@ export const DisplayCharacters = props => {
           />
         );
       })}
-    </section>
+    </Allcharacters>
   );
 };
