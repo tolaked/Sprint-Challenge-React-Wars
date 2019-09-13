@@ -1,0 +1,11 @@
+.all-characters {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}

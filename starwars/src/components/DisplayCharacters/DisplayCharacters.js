@@ -1,10 +1,11 @@
 import React from "react";
 import { CharacterList } from "../CharacterList/CharacterList";
+import "./DisplayCharacter.css";
 
 export const DisplayCharacters = props => {
   const { starwarsChars } = props;
   return (
-    <section>
+    <section className="all-characters">
       {starwarsChars.map(character => {
         const {
           name,

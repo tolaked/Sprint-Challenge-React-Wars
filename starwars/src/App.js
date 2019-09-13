@@ -13,14 +13,13 @@ const App = () => {
   const [state, setState] = useState([]);
 
   const myStarWars = () => {
-    axios
-      .get("https://swapi.co/api/people/")
+    fetch("https://swapi.co/api/people/")
       .then(res => {
         return res.json();
       })
       .then(data => {
         setState(data.results);
-        console.log(data.results);
+        console.log(data);
       })
       .catch(error => {
         return "Something went wrong";
@@ -29,10 +28,14 @@ const App = () => {
   React.useEffect(myStarWars, []);
 
   return (
-    <div className="App">
-      <h1 className="Header">React Wars</h1>
+    <>
+      <header className="main-header">
+        <div className="container">
+          <h1 className="Header">React StarWars</h1>
+        </div>
+      </header>
       <DisplayCharacters starwarsChars={state} />
-    </div>
+    </>
   );
 };
 
