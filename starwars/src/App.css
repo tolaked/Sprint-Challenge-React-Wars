@@ -6,3 +6,27 @@
   text-shadow: 1px 1px 5px #fff;
 }
 /* write your parent styles in here for your App.js */
+.container {
+  margin: 10px auto;
+  width: 95%;
+}
+
+.main-header {
+  text-align: center;
+}
+
+.main-header h1 {
+  font-size: 3rem;
+}
+
+.footer {
+  text-align: center;
+  font-size: 2rem;
+  color: white;
+  padding: 1em;
+}
+
+div {
+  width: 1000px;
+  margin: 0px auto;
+}

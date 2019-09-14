@@ -1,0 +1,25 @@
+.single-char-list-container {
+  width: 28%;
+  font-size: 1rem;
+  background: #272b30;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.single-char-list-container header {
+  color: rgba(255, 255, 255, 0.74);
+  background: #131111e0;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0.5rem;
+}
+
+.single-char-list-container ul {
+  padding: 1em;
+  color: rgba(255, 255, 255, 0.74);
+}
+
+.single-char-list-container footer {
+  padding: 1em;
+  color: rgba(250, 235, 215, 0.561);
+}
